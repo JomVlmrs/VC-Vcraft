@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Voice Room</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="voice-page">
+
+<div class="voice-container">
+
+    <div class="top-bar">
+
+        <div>
+
+            <h1>
+                Voice Room
+            </h1>
+
+            <p id="roomText"></p>
+
+        </div>
+
+        <div class="status-circle"></div>
+
+    </div>
+
+    <div class="voice-visualizer">
+
+        <div class="circle"></div>
+
+        <div class="circle delay1"></div>
+
+        <div class="circle delay2"></div>
+
+    </div>
+
+    <div class="controls">
+
+        <button id="startBtn">
+            Start
+        </button>
+
+        <button id="muteBtn">
+            Mute
+        </button>
+
+        <button id="quitBtn">
+            Quit
+        </button>
+
+    </div>
+
+    <p id="status">
+        Waiting...
+    </p>
+
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+
+<script src="voice.js"></script>
+
+</body>
+
+</html>
